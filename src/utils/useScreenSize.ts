@@ -1,11 +1,7 @@
-// utils/useScreenSize.ts
 import { useEffect, useState } from "react";
 
 export function useScreenSize() {
-  const [screenSize, setScreenSize] = useState({
-    width: typeof window !== "undefined" ? window.innerWidth : 0,
-    height: typeof window !== "undefined" ? window.innerHeight : 0,
-  });
+  const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
     const handleResize = () => {
@@ -15,7 +11,7 @@ export function useScreenSize() {
       });
     };
 
-    handleResize(); // initial call
+    handleResize(); // get initial size after mount
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
