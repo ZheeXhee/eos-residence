@@ -7,7 +7,9 @@ import PicturesModal from "./picturesModal";
 export default function RoomType() {
     const [isModalOpen, setModalOpen] = useState<boolean>(false);
   
-    const handleOpenModal = () => {
+    const allImages = roomTypes.flatMap(room => room.images);
+
+    const handleOpenModal = (images: any) => {
       setModalOpen(!isModalOpen);
     }
     
@@ -43,7 +45,7 @@ export default function RoomType() {
 
       {
         isModalOpen && (
-          <PicturesModal isModalOpen={isModalOpen} setModalOpen={setModalOpen} />
+          <PicturesModal isModalOpen={isModalOpen} setModalOpen={setModalOpen} images={allImages} />
         )
       }
     </>

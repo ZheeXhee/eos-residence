@@ -1,8 +1,10 @@
 import { Modal, ModalHeader, ModalBody } from 'flowbite-react';
+import { StaticImageData } from 'next/image';
 
-export default function PicturesModal({ isModalOpen, setModalOpen }: {
+export default function PicturesModal({ isModalOpen, setModalOpen, images }: {
     isModalOpen:boolean,
     setModalOpen: (isOpen: boolean) => void;
+    images: StaticImageData[];
 }) {
     return (
       <Modal show={isModalOpen} onClose={() => setModalOpen(false)}>
