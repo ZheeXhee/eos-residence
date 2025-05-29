@@ -1,7 +1,16 @@
+"use client"
 import { Button, Card } from "flowbite-react"
 import { roomTypes } from "./constants"
+import { useState } from "react";
+import PicturesModal from "./picturesModal";
 
 export default function RoomType() {
+    const [isModalOpen, setModalOpen] = useState<boolean>(false);
+  
+    const handleOpenModal = () => {
+      setModalOpen(!isModalOpen);
+    }
+    
   return (
     <>
       <div className="flex items-center gap-4 mt-8 mb-6">
@@ -23,12 +32,18 @@ export default function RoomType() {
                         <li key={index} className="text-gray-800}">{highlight}</li>
                       ))}
                     </ul>
-                    <Button className="bg-white border border-gray-900 px-6 justify-self-center text-gray-900 hover:bg-gray-100" pill size="sm">View More</Button>
+                    <Button className="bg-white border border-gray-900 px-6 justify-self-center text-gray-900 hover:bg-gray-100" pill size="sm" onClick={handleOpenModal}>View More</Button>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+        )
+      }
+
+      {
+        isModalOpen && (
+          <PicturesModal isModalOpen={isModalOpen} setModalOpen={setModalOpen} />
         )
       }
     </>

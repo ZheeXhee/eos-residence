@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AppWrapper from "./AppWrapper";
-import { ThemeConfig, ThemeProvider } from "flowbite-react";
+import { ThemeConfig } from "flowbite-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +31,7 @@ export default function RootLayout({
       <html lang="en" className="h-full">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
+          cz-shortcut-listen="true"
         >
           <AppWrapper>{children}</AppWrapper>
         </body>
