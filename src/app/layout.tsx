@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AppWrapper from "./AppWrapper";
+import WhatsAppButton from "@/components/whatsappButton";
 import { ThemeConfig } from "flowbite-react";
 
 const geistSans = Geist({
@@ -34,6 +35,7 @@ export default function RootLayout({
           cz-shortcut-listen="true"
         >
           <AppWrapper>{children}</AppWrapper>
+          <WhatsAppButton />
         </body>
       </html>
     </>
