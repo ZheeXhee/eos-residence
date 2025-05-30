@@ -66,7 +66,7 @@ export const roomTypes = [
       "Cabinet",
     ],
     image: master,
-    images: [],
+    images: [master, masterImage2, masterImage3, masterImage4, masterImage5, masterImage6],
   },
   {
     type: "Medium 1 Room",

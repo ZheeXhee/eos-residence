@@ -1,7 +1,7 @@
 import { Footer } from "flowbite-react";
 export default function footer() {
   return (
-    <Footer className="bg-gray-50 text-white p-6 shadow-none mt-4">
+    <Footer className="bg-gray-100 text-white p-6 shadow-none mt-6">
       <div className="container">
         <div className="flex flex-row gap-4 lg:gap-14 items-start justify-start mb-6 px-2">
           <img src="/logo.png" alt="EOS Residence Logo" className="h-12" />

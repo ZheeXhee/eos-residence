@@ -3,13 +3,18 @@ import { Button, Card } from "flowbite-react"
 import { roomTypes } from "./constants"
 import { useState } from "react";
 import PicturesModal from "./picturesModal";
+import { StaticImageData } from "next/image";
 
 export default function RoomType() {
     const [isModalOpen, setModalOpen] = useState<boolean>(false);
-  
-    const allImages = roomTypes.flatMap(room => room.images);
+    const [selectedRoomType, setSelectedRoomType] = useState<string>("");
+    const [selectedRoomImages, setSelectedRoomImages] = useState<StaticImageData[]>([]);
 
-    const handleOpenModal = (images: any) => {
+    const accommodationType = "Covillea";
+
+    const handleOpenModal = (images: any[], type: string) => {
+      setSelectedRoomType(type);
+      setSelectedRoomImages(images);
       setModalOpen(!isModalOpen);
     }
     
@@ -24,17 +29,17 @@ export default function RoomType() {
         roomTypes.length > 0 && (
           <div className="grid grid-cols-2 gap-8">
             {roomTypes.map((room, index) => (
-              <div key={index} className="col-span-2 xl:col-span-1 mb-6 p-0 rounded-lg shadow-sm bg-gray-100">
+              <div key={index} className="col-span-2 lg:col-span-1 mb-6 p-0 rounded-lg shadow-sm bg-gray-100">
                 <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-6">
-                  <img src={room.image.src} alt={room.type} className="w-full sm:w-84 h-full object-cover rounded-t-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg justify-self-center" />
-                  <div className="flex flex-col justify-center p-2">
+                  <img src={room.image.src} alt={room.type} className="w-full sm:w-84 h-64 lg:h-full object-cover rounded-t-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg justify-self-center" />
+                  <div className="flex flex-col justify-center p-2 mb-2">
                     <p className="text-xl font-semibold mb-1">{room.type}</p>
                     <ul className="list-disc list-inside mb-2">
                       {room.highlight.map((highlight, index) => (
                         <li key={index} className="text-gray-800}">{highlight}</li>
                       ))}
                     </ul>
-                    <Button className="bg-white border border-gray-900 px-6 justify-self-center text-gray-900 hover:bg-gray-100" pill size="sm" onClick={handleOpenModal}>View More</Button>
+                    <Button className="bg-white border border-gray-900 px-6 justify-self-center text-gray-900 hover:bg-gray-100" pill size="sm" onClick={() => handleOpenModal(room.images, room.type)}>View More</Button>
                   </div>
                 </div>
               </div>
@@ -45,7 +50,7 @@ export default function RoomType() {
 
       {
         isModalOpen && (
-          <PicturesModal isModalOpen={isModalOpen} setModalOpen={setModalOpen} images={allImages} />
+          <PicturesModal isModalOpen={isModalOpen} setModalOpen={setModalOpen} images={selectedRoomImages} type={selectedRoomType} accommodationType={accommodationType} />
         )
       }
     </>

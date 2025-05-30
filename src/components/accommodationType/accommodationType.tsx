@@ -21,7 +21,7 @@ export default function AccommodationType() {
                   <li key={descIndex} className="text-gray-800">{desc}</li>
                 ))}
               </ul>
-              <Button href={type.href} className="bg-white w-1/2 border justify-self-center text-gray-900 hover:bg-gray-50" pill size="sm">
+              <Button href={type.href} className="bg-white w-1/2 border justify-self-center text-gray-900 hover:bg-gray-100" pill size="sm">
                 Learn More
               </Button>
             </div>

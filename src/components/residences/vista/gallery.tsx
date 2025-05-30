@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { commonSharingArea } from "./constants";
-import { FaCross } from 'react-icons/fa6';
+import { FaTimes } from 'react-icons/fa';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(commonSharingArea[0]);
@@ -45,7 +45,7 @@ export default function Gallery() {
             <div key={index} className="w-1/2 sm:w-1/3 md:w-1/4 xl:w-1/6 p-2">
               <img
                 onClick={() => handleSelect(image)}
-                className={`h-[165px] w-full rounded-lg cursor-pointer transition-all duration-200 ${
+                className={`h-[210px] w-full rounded-lg cursor-pointer transition-all duration-200 ${
                   selectedImage === image ? 'border-2 border-gray-900' : ''
                 }`}
                 src={image.src}
@@ -64,9 +64,11 @@ export default function Gallery() {
               className="absolute top-2 right-2 text-gray-600 hover:text-black"
               onClick={() => setIsModalOpen(false)}
             >
-              <FaCross className="w-6 h-6" />
+              <FaTimes className="w-6 h-6" />
             </button>
-            <img src={selectedImage.src} alt="Selected" className="w-full h-auto rounded-lg" />
+            <div className="flex justify-center">
+              <img src={selectedImage.src} alt="Selected" className="w-auto h-96 rounded-lg" />
+            </div>
           </div>
         </div>
       )}
