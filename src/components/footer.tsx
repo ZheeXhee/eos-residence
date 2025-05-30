@@ -13,8 +13,8 @@ export default function footer() {
             </div>
             <div className="flex flex-col gap-1">
               <p className="about-us text-gray-900 font-semibold text-md">Help Center</p>
-              <a href="#" className="text-sm text-gray-800 hover:underline">Contact Us</a>
-              <a href="#" className="text-sm text-gray-800 hover:underline">Frequestly Asked Questions (FAQs)</a>
+              <a href="/contact-us" className="text-sm text-gray-800 hover:underline">Contact Us</a>
+              <a href="/faq" className="text-sm text-gray-800 hover:underline">Frequestly Asked Questions (FAQs)</a>
             </div>
           </div>
         </div>
