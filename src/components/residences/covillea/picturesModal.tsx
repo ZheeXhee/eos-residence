@@ -7,12 +7,10 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { RiGalleryView2 } from "react-icons/ri";
-import  Image  from "next/image";
 
 const modes = ["Gallery", "Slideshow"];
 
 export default function PicturesModal({
-  isModalOpen,
   setModalOpen,
   images,
   type,
