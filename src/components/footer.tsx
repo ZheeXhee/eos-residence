@@ -1,6 +1,7 @@
 import { Footer } from "flowbite-react";
 import Link from "next/link";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+
 export default function footer() {
   return (
     <Footer className="bg-gray-100 text-white p-6 shadow-none mt-6">

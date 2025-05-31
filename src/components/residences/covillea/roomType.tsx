@@ -1,5 +1,5 @@
 "use client"
-import { Button, Card } from "flowbite-react"
+import { Button } from "flowbite-react"
 import { roomTypes } from "./constants"
 import { useState } from "react";
 import PicturesModal from "./picturesModal";
@@ -12,7 +12,7 @@ export default function RoomType() {
 
     const accommodationType = "Covillea";
 
-    const handleOpenModal = (images: any[], type: string) => {
+    const handleOpenModal = (images: StaticImageData[], type: string) => {
       setSelectedRoomType(type);
       setSelectedRoomImages(images);
       setModalOpen(!isModalOpen);

@@ -12,7 +12,7 @@ export default function RoomType() {
 
   const accommodationType = "Vista Komanwel B";
 
-  const handleOpenModal = (images: any[], type: string) => {
+  const handleOpenModal = (images: StaticImageData[], type: string) => {
     setSelectedRoomType(type);
     setSelectedRoomImages(images);
     setModalOpen(!isModalOpen);

@@ -11,7 +11,6 @@ import { RiGalleryView2 } from "react-icons/ri";
 const modes = ["Gallery", "Slideshow"];
 
 export default function PicturesModal({
-  isModalOpen,
   setModalOpen,
   images,
   type,

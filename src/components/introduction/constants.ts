@@ -1,6 +1,5 @@
 import covillea from '@/assets/covillea/covillea.jpg';
 import vista from '@/assets/vista/vista.jpg';
-import { buttonGroupTheme } from 'flowbite-react';
 
 export const introduction = {
   title: "Need student accommodation?",

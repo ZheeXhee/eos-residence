@@ -7,6 +7,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { RiGalleryView2 } from "react-icons/ri";
+import  Image  from "next/image";
 
 const modes = ["Gallery", "Slideshow"];
 

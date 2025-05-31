@@ -5,8 +5,7 @@ import Link from 'next/link';
 
 export default function Introduction() {
   const [currentImage, setCurrentImage] = useState(0);
-
-  const { images, title, subtitle, description, buttonText, buttonHref } = introduction;``
+  const { images, title, subtitle, description, buttonText, buttonHref } = introduction;
 
   const handleNextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
