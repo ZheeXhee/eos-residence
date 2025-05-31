@@ -6,7 +6,7 @@ import dining from "@/assets/vista/sharingArea/dining.jpeg";
 import kitchen from "@/assets/vista/sharingArea/kitchen.jpeg";
 import homeLayout from "@/assets/vista/sharingArea/generalLayout.jpeg";
 import bathroom from "@/assets/vista/sharingArea/sharingBathroom.jpeg";
-import livingRoom from "@/assets/vista/sharingArea/living.jpeg";
+import livingRoom from "@/assets/vista/sharingArea/Living.jpeg";
 
 //master room picture import
 import master from "@/assets/vista/master/master.jpeg";
