@@ -24,7 +24,7 @@ export default function Introduction() {
 
   return (
     <div className="w-full shadow-sm bg-gray-100 p-8 rounded-lg border-none">
-      <div className='flex flex-col md:flex-row gap-4 lg:gap-12 mb-4 justify-between items-center'>
+      <div className='flex flex-col md:flex-row gap-4 lg:gap-12 mb-4 justify-center xl:justify-between items-center'>
         <div className='flex flex-col introduction-text gap-2 md:w-3/5'>
           <p className="text-xl font-bold text-gray-900 mb-1">{title}</p>
           <p className="text-lg font-semibold text-gray-900 mb-2">{subtitle}</p>
