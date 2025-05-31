@@ -1,4 +1,5 @@
 import { Footer } from "flowbite-react";
+import Link from "next/link";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 export default function footer() {
   return (
@@ -24,13 +25,13 @@ export default function footer() {
           <div className="flex flex-wrap items-start gap-4 lg:gap-16">
             <div className="flex flex-col gap-1">
               <p className="about-us text-gray-900 font-semibold text-md">Residences</p>
-              <a href="/covillea" className="text-sm text-gray-800 hover:underline">Covillea</a>
-              <a href="/vista" className="text-sm text-gray-800 hover:underline">Vista Komanwel B</a>
+              <Link href="/covillea" className="text-sm text-gray-800 hover:underline">Covillea</a>
+              <Link href="/vista" className="text-sm text-gray-800 hover:underline">Vista Komanwel B</a>
             </div>
             <div className="flex flex-col gap-1">
               <p className="about-us text-gray-900 font-semibold text-md">Help Center</p>
-              <a href="/contact-us" className="text-sm text-gray-800 hover:underline">Contact Us</a>
-              <a href="/faq" className="text-sm text-gray-800 hover:underline">Frequestly Asked Questions (FAQs)</a>
+              <Link href="/contact-us" className="text-sm text-gray-800 hover:underline">Contact Us</a>
+              <Link href="/faq" className="text-sm text-gray-800 hover:underline">Frequestly Asked Questions (FAQs)</a>
             </div>
           </div>
         </div>

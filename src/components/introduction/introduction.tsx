@@ -1,6 +1,4 @@
 'use client';
-import { Button, Card } from 'flowbite-react';
-
 import { useEffect, useState } from 'react';
 import { introduction } from './constants';
 import Link from 'next/link';

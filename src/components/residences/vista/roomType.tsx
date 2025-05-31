@@ -1,5 +1,5 @@
 "use client"
-import { Button, Card } from "flowbite-react"
+import { Button } from "flowbite-react"
 import { roomTypes } from "./constants"
 import { useState } from "react"
 import { StaticImageData } from "next/image";

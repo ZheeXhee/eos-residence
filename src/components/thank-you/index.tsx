@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import logo from '../../../public/logo.png';
 
 export default function ThankYou() {
@@ -10,7 +11,7 @@ export default function ThankYou() {
       <p className="text-gray-600 text-sm text-center mb-6">
         Your message has been sent successfully. We will get back to you as soon as possible.
       </p>
-      <a
+      <Link
         href="/"
         className="bg-blue-800 text-white px-6 py-2 rounded-4xl text-sm hover:bg-blue-700 transition-colors"
       >Back to Home</a>
