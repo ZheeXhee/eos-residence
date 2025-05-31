@@ -14,7 +14,7 @@ export default function ThankYou() {
       <Link
         href="/"
         className="bg-blue-800 text-white px-6 py-2 rounded-4xl text-sm hover:bg-blue-700 transition-colors"
-      >Back to Home</a>
+      >Back to Home</Link>
     </div>
   );
 }
