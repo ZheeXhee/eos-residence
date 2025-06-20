@@ -32,6 +32,10 @@ import medium1Image4 from "@/assets/vista/medium1/image4.jpeg";
 //compact room picture import
 import compact from "@/assets/vista/compact/compact.jpg";
 import compactImage2 from "@/assets/vista/compact/image2.jpg";
+import { ImPriceTags } from "react-icons/im";
+import { FaBed, FaUser } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
+import { MdNearMe } from "react-icons/md";
 
 export const Introduction = {
   title: "Superior Accommodation Type",
@@ -39,9 +43,26 @@ export const Introduction = {
   description:
     "Enjoy affordable student living at Vista Komanwel B, where essential comfort meets convenience in a prime location. Each unit comes fully furnished with basic amenities, ideal for students seeking a budget-friendly stay.",
   point: [
-    "Economical option with basic facilities",
-    "Within 3 minutes walking distance to IMU",
-    "Shared among 3 students",
+          {
+            icon: <BsStars className="inline text-yellow-300" />,
+            text: "Economical option: Fully furnished with all essentials"
+          },
+          {
+            icon: <FaBed className="inline text-blue-700" />,
+            text: "3-bedroom unit, shared among 3 students (private rooms)"
+          },
+          {
+            icon: <MdNearMe className="inline text-gray-400" />,
+            text: "Within 5 minutes walking distance to IMU"
+          },
+          {
+            icon: <FaUser />,
+            text: "Single occupancy, same-gender unit"
+          },
+          {
+            icon: <ImPriceTags className="inline text-red-600" />,
+            text: "Price range: RM 900 - RM 1,450 per month"
+          }
   ],
   image: vista,
   images: [
@@ -59,11 +80,8 @@ export const roomTypes = [
     type: "Master Room",
     highlight: [
       "Attached Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 1,450"
     ],
     image: master,
     images: [master, masterImage2, masterImage3, masterImage4, masterImage5, masterImage6],
@@ -72,11 +90,8 @@ export const roomTypes = [
     type: "Medium 1 Room",
     highlight: [
       "Shared Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 1,150"
     ],
     image: medium1,
     images: [medium1, medium1Image2, medium1Image3, medium1Image4],
@@ -85,11 +100,8 @@ export const roomTypes = [
     type: "Medium 2 Room",
     highlight: [
       "Shared Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 980"
     ],
     image: medium2,
     images: [
@@ -104,11 +116,8 @@ export const roomTypes = [
     type: "Compact Room",
     highlight: [
       "Shared Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 900"
     ],
     image: compact,
     images: [compact, compactImage2],

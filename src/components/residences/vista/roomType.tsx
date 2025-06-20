@@ -30,10 +30,10 @@ export default function RoomType() {
             {roomTypes.map((room, index) => (
               <div key={index} className="col-span-2 lg:col-span-1 mb-6 p-0 rounded-lg shadow-sm bg-gray-100">
                 <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-6">
-                  <img src={room.image.src} alt={room.type} className="w-full sm:w-84 h-64 object-cover rounded-t-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg justify-self-center" />
-                  <div className="flex flex-col justify-center p-2 mb-2">
+                  <img src={room.image.src} alt={room.type} className="w-full sm:w-84 h-64 aspect-[4/3] object-cover rounded-t-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg justify-self-center" />
+                  <div className="flex flex-col p-2 mb-2">
                     <p className="text-xl font-semibold mb-1">{room.type}</p>
-                    <ul className="list-disc list-inside mb-2">
+                    <ul className="list-disc list-outside pl-4 mb-2 whitespace-normal">
                       {room.highlight.map((highlight, index) => (
                         <li key={index} className="text-gray-800}">{highlight}</li>
                       ))}

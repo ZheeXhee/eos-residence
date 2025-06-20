@@ -29,11 +29,14 @@ export default function NavBar({ isMenuOpenMobile, setIsMenuOpenMobile, isMobile
   const isActivePath = (path: string) => pathname === path;
   const isAccomActive = isActivePath("/covillea") || isActivePath("/vista");
 
+  const phoneNumber = "60183999130";
+  const message = "Hi! I'm interested in EOS Residence.";
+
   return (
     <Navbar fluid rounded className="w-full !max-w-full h-full bg-white">
       {/* Brand */}
       <NavbarBrand href="/" onClick={closeMobileMenu}>
-        <img src="/logo.png" className="h-16 sm:h-12" alt="EOS Residence Logo" />
+        <img src="/logo.png" className="h-20 sm:h-16" alt="EOS Residence Logo" />
       </NavbarBrand>
 
       {/* Mobile Actions */}
@@ -62,7 +65,7 @@ export default function NavBar({ isMenuOpenMobile, setIsMenuOpenMobile, isMobile
         </NavbarLink>
 
         {isMobile ? (
-          <>
+          <div className="border-b border-gray-200">
             <button
               onClick={() => setDropdownOpen((prev) => !prev)}
               className="w-full text-left px-3 py-2 text-gray-900 hover:bg-gray-100 rounded-md flex items-center justify-between"
@@ -93,7 +96,7 @@ export default function NavBar({ isMenuOpenMobile, setIsMenuOpenMobile, isMobile
                 </Link>
               </div>
             )}
-          </>
+          </div>
         ) : (
           <Dropdown
             inline
@@ -137,7 +140,7 @@ export default function NavBar({ isMenuOpenMobile, setIsMenuOpenMobile, isMobile
       {/* Desktop Get Started */}
       <div className="hidden md:flex">
         <Link
-          href="https://forms.gle/AnRZ8MVCRE5koUoGA"
+          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
           target="_blank"
           className="bg-blue-800 px-6 py-2 rounded-4xl text-white text-sm"
         >

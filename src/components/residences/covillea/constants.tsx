@@ -37,6 +37,10 @@ import compactImage1 from "@/assets/covillea/compact/image2-compact.jpeg";
 import compactImage2 from "@/assets/covillea/compact/image3-compact.jpeg";
 import compactImage3 from "@/assets/covillea/compact/image4-compact.jpeg";
 import compactImage4 from "@/assets/covillea/compact/image5-compact.jpeg";
+import { ImPriceTag } from "react-icons/im";
+import { MdNearMe } from "react-icons/md";
+import { FaUser, FaBed } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
 
 export const Introduction = {
   title: "Deluxe Accommodation Type",
@@ -44,10 +48,26 @@ export const Introduction = {
   description:
     "Experience premium student living with our DELUXE CONDO unit, with enhanced security and modern facilities. Each unit is fully furnished with essential amenities and modern conveniences.",
   point: [
-    "Premium option with modern facilities",
-    "Vibrant student community",
-    "Within 5 minutes walking distance to IMU",
-    "Shared among 3 students",
+    {
+      icon: <BsStars className="inline text-yellow-300" />,
+      text: "Modern interiors with premium furnishings and facilities",
+    },
+    {
+      icon: <FaBed className="inline text-blue-700" />,
+      text: "Shared among 3 students (individual rooms)",
+    },
+    {
+      icon: <MdNearMe className="inline text-gray-400" />,
+      text: "Within 5 minutes walking distance to IMU",
+    },
+    {
+      icon: <FaUser />,
+      text: "Single occupancy, single-gender arrangement",
+    },
+    {
+      icon: <ImPriceTag className="inline text-red-600" />,
+      text: "Price range: RM 1,200 - RM 2,300 per month",
+    },
   ],
   image: covillea,
 };
@@ -57,11 +77,8 @@ export const roomTypes = [
     type: "Master Room",
     highlight: [
       "Attached Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 2,300",
     ],
     image: master,
     images: [
@@ -77,11 +94,8 @@ export const roomTypes = [
     type: "Medium 2 Room",
     highlight: [
       "Shared Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 1,700",
     ],
     image: medium2,
     images: [
@@ -97,11 +111,8 @@ export const roomTypes = [
     type: "Medium L Room",
     highlight: [
       "Shared Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 1,400",
     ],
     image: mediumL,
     images: [
@@ -116,11 +127,8 @@ export const roomTypes = [
     type: "Compact Room",
     highlight: [
       "Shared Bathroom",
-      "Study Table with Chair",
-      "Mattress",
-      "Air Conditioned Room",
-      "WIFI-Internet",
-      "Cabinet",
+      "Amenities: Table, Mattress, AC, WIFI, Cabinet",
+      "Monthly Rental: RM 1,200",
     ],
     image: compact,
     images: [

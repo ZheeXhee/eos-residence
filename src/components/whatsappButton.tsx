@@ -7,14 +7,14 @@ export default function WhatsAppButton() {
 
   return (
     <div className="fixed bottom-4 right-4">
-      <Tooltip content="Chat with us on WhatsApp" style="light" className="w-36">
+      <Tooltip content="Chat with us on WhatsApp" style="light" className="w-48">
         <a
           href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-14 h-14 bg-green-400 text-white rounded-full shadow-lg hover:bg-green-500 transition-colors"
+          className="flex items-center justify-center w-20 h-20 bg-green-400 text-white rounded-full shadow-lg hover:bg-green-500 transition-colors"
         >
-          <FaWhatsapp className="text-2xl" />
+          <FaWhatsapp className="text-4xl" />
         </a>
       </Tooltip>
     </div>

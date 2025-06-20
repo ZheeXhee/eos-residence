@@ -12,9 +12,14 @@ export default function Intro() {
               <p className="text-xl font-bold text-gray-900 mb-1">{title}</p>
               <p className="text-lg font-semibold text-gray-900 mb-2">{subtitle}</p>
               <p className='text-md text-gray-800 mb-4'>{description}</p>
-              <ul className="list-disc list-inside mb-3">
-                {point.map((item, index) => (
-                  <li key={index} className="text-gray-800">{item}</li>
+              <ul className="list-inside ml-2">
+                {point.map((point, index) => (
+                  <li key={index} className="text-gray-800 mb-2">
+                    <div className="flex items-center gap-2">
+                    {point.icon}
+                    {point.text}
+                    </div>
+                  </li>
                 ))}
               </ul>
             </div>

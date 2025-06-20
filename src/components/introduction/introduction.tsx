@@ -31,7 +31,7 @@ export default function Introduction() {
           </div>
         </div>
         <div className='introduction-image relative'>
-          <img src={images[currentImage].src} alt={`${images[currentImage]}`} className='w-128 h-auto rounded-lg shadow-md' />
+          <img src={images[currentImage].src} alt={`${images[currentImage]}`} className='w-128 aspect-[5/3] rounded-lg shadow-md' />
           <div className='absolute flex mt-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
             {
               images.map((_, index) => {

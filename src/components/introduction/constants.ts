@@ -1,13 +1,15 @@
-import covillea from '@/assets/covillea/covillea.jpg';
-import vista from '@/assets/vista/vista.jpg';
+import masterImage3 from "@/assets/covillea/master/image4.jpeg";
+import masterImage4 from "@/assets/covillea/master/image5.jpeg";
+
 
 export const introduction = {
-  title: "Need student accommodation?",
-  subtitle: "Find your ideal hostel today at EOS Residence!",
-  description: `EOS Residence by EOS Stay offers safe, clean, and fully furnished off-campus housing just minutes from IMU Bukit Jalil.
-                Safety is of utmost importance at EOS Residence, with a 4-tier security system, dedicated 24-hour security guards, and CCTV surveillance in place.
-                Our mission is to provide a comfortable and welcoming home where students can focus on their studies while enjoying modern facilities at Covillea and Vista Komanwel B.`,
+  title: "Welcome to EOS Residence!",
+  subtitle: "Your Comfortable Stay Near IMU.",
+  description: `We're excited to introduce EOS Residence, a trusted accommodation provider 
+                located just a few minutes' walk from IMU's main campus. Whether you're staying 
+                for a short exchange program or a full semester, EOS offers safe, comfortable, and 
+                student-friendly living spaces designed to support your academic journey.`,
   buttonText: "Book a Room Tour",
-  images: [covillea, vista],
+  images: [masterImage3, masterImage4],
   buttonHref: 'https://forms.gle/AnRZ8MVCRE5koUoGA',
 }
