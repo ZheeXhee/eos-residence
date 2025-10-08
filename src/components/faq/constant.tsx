@@ -16,7 +16,7 @@ export const FAQs = [
         >
           (click here to download)
         </a>{" "}
-        and email it to eosstay@gmail.com.
+        and email it to inquiry@eoshostel.com.
       </span>
     ),
   },
