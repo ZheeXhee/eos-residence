@@ -29,7 +29,7 @@ export default function NavBar({ isMenuOpenMobile, setIsMenuOpenMobile, isMobile
   const isActivePath = (path: string) => pathname === path;
   const isAccomActive = isActivePath("/covillea") || isActivePath("/vista");
 
-  const phoneNumber = "60183999130";
+  const phoneNumber = "601139350197";
   const message = "Hi! I'm interested in EOS Residence.";
 
   return (
