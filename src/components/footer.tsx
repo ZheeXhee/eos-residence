@@ -13,13 +13,13 @@ export default function footer() {
             <div className="flex items-center gap-3 text-sm text-gray-900">
               <FaWhatsapp className="text-green-600" />
               <a href="https://wa.me/601139350197" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                +6018-3999130
+                +6011-39350197
               </a>
             </div>
             <div className="flex items-center gap-3 text-sm text-gray-900">
               <FaEnvelope className="text-blue-500" />
               <a href="mailto:inquiry@eoshostel.com" className="hover:underline">
-                eosstay@gmail.com
+                inquiry@eoshostel.com
               </a>
             </div>
           </div>
