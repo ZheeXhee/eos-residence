@@ -2,7 +2,7 @@ import { Tooltip } from "flowbite-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "60183999130";
+  const phoneNumber = "601139350197";
   const message = "Hi! I'm interested in EOS Residence.";
 
   return (
