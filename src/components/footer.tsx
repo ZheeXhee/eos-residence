@@ -12,13 +12,13 @@ export default function footer() {
             <img src="/logo.png" alt="EOS Residence Logo" className="w-24 h-auto" />
             <div className="flex items-center gap-3 text-sm text-gray-900">
               <FaWhatsapp className="text-green-600" />
-              <a href="https://wa.me/60183999130" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <a href="https://wa.me/601139350197" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 +6018-3999130
               </a>
             </div>
             <div className="flex items-center gap-3 text-sm text-gray-900">
               <FaEnvelope className="text-blue-500" />
-              <a href="mailto:eosstay@gmail.com" className="hover:underline">
+              <a href="mailto:inquiry@eoshostel.com" className="hover:underline">
                 eosstay@gmail.com
               </a>
             </div>
